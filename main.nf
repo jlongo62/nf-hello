@@ -10,6 +10,7 @@ process sayHello {
     script:
     """
     echo '${greeting} world!'
+    sleep 5
     """
 }
 
