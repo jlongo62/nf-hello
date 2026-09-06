@@ -2,3 +2,4 @@
 .nextflow*
 .idea/
 work/
+test/test-asset.bin
