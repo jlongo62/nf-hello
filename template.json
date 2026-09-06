@@ -1,0 +1,14 @@
+{
+  "azure_tenant_id": "TBD",
+  "azure_service_principal_id": "TBD",
+  "azure_service_principal_secret": "TBD",
+  "azure_batch_account_name": "TBD",
+  "azure_batch_endpoint": "TBD",
+  "azure_location": "TBD",
+  "azure_storage_account_name": "TBD",
+  "azure_storage_container": "scratch",
+  "azure_machine_type": "Standard_D2s_v3",
+  "azure_allow_pool_creation": true,
+  "azure_auto_pool_mode": true,
+  "azure_delete_pools_on_completion": true
+}
