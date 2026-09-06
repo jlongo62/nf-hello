@@ -7,9 +7,7 @@
   "azure_location": "TBD",
   "azure_storage_account_name": "TBD",
   "azure_storage_container": "scratch",
-  "azure_machine_type": "Standard_B1ls",
-  "azure_cpus": "1",
-  "azure_memory": "1",
+  "azure_machine_type": "Standard_D2s_v3",
   "azure_allow_pool_creation": true,
   "azure_auto_pool_mode": true,
   "azure_delete_pools_on_completion": true
