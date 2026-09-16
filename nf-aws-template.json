@@ -1,0 +1,7 @@
+{
+    "aws_profile": "terraform",
+    "aws_region": "us-east-2",
+    "aws_batch_queue": "nf-aws-dev-compute",
+    "aws_work_dir": "s3://{tbd}/nextflow",
+    "outdir": "s3://{tbd}/results"
+}

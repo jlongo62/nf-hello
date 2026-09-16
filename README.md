@@ -14,3 +14,25 @@ nextflow run jlongo62/nf-hello \
   -params-file /home/q/secrets/nf-azure.json
   
 ```
+
+# Run in AWS
+
+```sh
+# Edit nf-aws-template.json with the AWS work bucket and output location.
+
+. /home/q/secrets/aws-credentials.sh
+
+nextflow run . \
+  -profile aws_batch \
+  -params-file secrets/ nf-aws-template.json
+```
+
+# Troubleshooting
+
+See Cloudwatch Query Results:
+```
+SOURCE logGroups(namePrefix: [], class: "STANDARD") START=-1w END=0s |
+fields @timestamp, @message
+| sort @timestamp desc
+| limit 10000
+```
