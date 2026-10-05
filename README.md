@@ -11,7 +11,7 @@ nextflow pull jlongo62/nf-hello
 
 nextflow run jlongo62/nf-hello \
   -profile az_pool_auto \
-  -params-file /home/q/secrets/nf-azure.json
+  -params-file /home/q/secrets/nf-azure-nfcc2.json
   
 ```
 
