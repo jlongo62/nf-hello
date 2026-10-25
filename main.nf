@@ -12,7 +12,7 @@ process sayHello {
     script:
     """
     echo '${greeting} world!'
-    sleep 5
+    sleep ${params.sleep}
     touch hello.done
     """
 }
@@ -29,7 +29,7 @@ process sayGoodbye {
     script:
     """
     echo 'GOODBYE ${greeting} world!'
-    sleep 5
+    sleep ${params.sleep}
     """
 }
 
