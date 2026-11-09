@@ -11,8 +11,8 @@ process sayHello {
 
     script:
     """
-    echo '${greeting} world! Sleeping for ${params.sleep} seconds.'
-    sleep ${params.sleep}
+    echo '${greeting} world! Sleeping for \$SLEEP seconds.'
+    sleep "\$SLEEP"
     touch hello.done
     """
 }
@@ -28,8 +28,8 @@ process sayGoodbye {
 
     script:
     """
-    echo 'GOODBYE ${greeting} world! Sleeping for ${params.sleep} seconds.'
-    sleep ${params.sleep}
+    echo 'GOODBYE ${greeting} world! Sleeping for \$SLEEP seconds.'
+    sleep "\$SLEEP"
     """
 }
 
